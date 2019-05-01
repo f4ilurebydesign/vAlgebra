@@ -2,7 +2,7 @@
 
 namespace core { namespace Points2 {
   
-  class Points2 {
+	class Points2 {
 	private:
 		double x;
 		double y;
@@ -30,11 +30,11 @@ namespace core { namespace Points2 {
 		Points2& operator= (const Points2& right);
 	};
   
-  //---------------------------------------------------------------------------------------------
-  //Points2
-  //---------------------------------------------------------------------------------------------
+  	//---------------------------------------------------------------------------------------------
+  	//Points2
+  	//---------------------------------------------------------------------------------------------
   
-  Points2::Points2(const double& x, const double& y) {
+  	Points2::Points2(const double& x, const double& y) {
 		this->x = x;
 		this->y = y;
 	}
