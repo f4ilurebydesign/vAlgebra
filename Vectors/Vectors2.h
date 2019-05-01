@@ -9,7 +9,7 @@ namespace core { namespace Vectors2 {
 		  double x1;
 		  double y1;
 	  public:
-		  Vectors2(const double& x0, const double& y0, const double& x1, const double& y1);
+		Vectors2(const double& x0, const double& y0, const double& x1, const double& y1);
 		
 	  	Vectors2& multNumb(const double n);
 	  	Vectors2& divNumb(const double n);
@@ -26,13 +26,16 @@ namespace core { namespace Vectors2 {
 		friend Vectors2 operator/ (Vectors2& left, const Vectors2& right);
 	  	friend Vectors2 operator* (Vectors2& left, const Vectors2& right);
 		
-		 Vectors2& operator+= (const Vectors2& right);
+		Vectors2& operator+= (const Vectors2& right);
 	  	Vectors2& operator-= (const Vectors2& right);
 	  	Vectors2& operator/= (const Vectors2& right);
 	  	Vectors2& operator*= (const Vectors2& right);
 	  	Vectors2& operator= (const Vectors2& right);
 	};
-
+	
+	//---------------------------------------------------------------------------------------------
+  	//Vectors2
+  	//---------------------------------------------------------------------------------------------
 
 	Vectors2::Vectors2(const double& x0, const double& y0, const double& x1, const double& y1) {
 		this->x0 = x0;
