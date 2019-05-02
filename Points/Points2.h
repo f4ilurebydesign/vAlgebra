@@ -28,8 +28,8 @@ namespace core { namespace Points2 {
 		friend Points2 operator- (Points2& left, const Points2& right);
 		friend Points2 operator/ (Points2& left, const Points2& right);
 		friend Points2 operator* (Points2& left, const Points2& right);
-		friend Points2 operator++ (const Points2& other);
-		friend Points2 operator-- (const Points2& right);
+		friend Points2 operator++ (Points2& other);
+		friend Points2 operator-- (Points2& right);
 
 		Points2& operator+= (const Points2& right);
 		Points2& operator-= (const Points2& right);
