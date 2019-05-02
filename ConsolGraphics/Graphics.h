@@ -48,7 +48,7 @@ namespace core { namespace cGraphics {
 			this->y1 = y1;
 		}
 		void draw() {
-			// - | / \
+			// - | / \ lines
 			
 		}
 	};
