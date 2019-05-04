@@ -23,19 +23,19 @@ namespace core { namespace cGraphics {
 			void draw();
 		};
 
-		class Line : public BaseGraphics {
-		private:
-			int x0, y0, x1, y1;
-		public:
-			Line(const core::Vectors2::Vectors& other);
-			void draw();
-		};
-
 		class Point : public BaseGraphics {
 		private:
 			int x, y;
 		public:
 			Point(const core::Points2::Points2& other);
+			void draw();
+		};
+
+		class Line : public BaseGraphics {
+		private:
+			int x0, y0, x1, y1;
+		public:
+			Line(const core::Vectors2::Vectors& other);
 			void draw();
 		};
 
@@ -62,6 +62,18 @@ namespace core { namespace cGraphics {
 					}
 					std::cout << std::endl;
 				}
+			}
+
+		//----------------------------------------
+		//point
+		//----------------------------------------
+
+		Point::Point(const core::Points2::Points2& other) {
+				this->x = other.x;
+				this->y = other.y;
+			}
+		void Point::draw() {
+				map[y][x] = '*';
 			}
 
 		//----------------------------------------
@@ -103,16 +115,5 @@ namespace core { namespace cGraphics {
 				}
 			}
 
-		//----------------------------------------
-		//point
-		//----------------------------------------
-
-		Point::Point(const core::Points2::Points2& other) {
-				this->x = other.x;
-				this->y = other.y;
-			}
-		void Point::draw() {
-				map[y][x] = '*';
-			}
 	}
 }
